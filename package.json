@@ -1,6 +1,6 @@
 {
   "name": "simple-angular-calender",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -34,6 +34,12 @@
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
+  "keywords": [
+    "angular",
+    "calendar",
+    "angular calendar",
+    "material calendar"
+  ],
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.7",
     "@angular/cli": "~9.1.7",
