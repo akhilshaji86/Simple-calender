@@ -1,15 +1,14 @@
 {
-  "name": "my-workspace",
+  "name": "simple-angular-calender",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/akhilshaji86/simple-angular-calendar.git"
