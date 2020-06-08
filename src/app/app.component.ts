@@ -13,13 +13,20 @@ export class AppComponent {
   heatmap: HeatMapModel;
   highlightToday: boolean
   colorMap: ColorMapModel;
+  zeropad: (num: any, padlen: any, padchar?: string) => string;
+  today: Date;
   constructor() {
     this.selDate = SimpleCalendarComponent.getToday();
-    this.heatmap = {
-      '02': {
-        color: 'green',
-        opacity: 0.5
-      }
+    this.zeropad = SimpleCalendarComponent.zeropad;
+    this.today = new Date();
+    let year, month, date;
+    year = `${this.today.getFullYear()}`;
+    month = this.zeropad(`${this.today.getMonth() + 1}`, 2);
+    date = `${this.today.getDate()+3}`; 
+    this.heatmap={};
+    this.heatmap[Number(year + this.zeropad(month, 2) + this.zeropad(date, 2))] = {
+      color: 'green',
+      opacity: 1
     };
     this.colorMap = {
       heatMapColor: '#00ff00',
